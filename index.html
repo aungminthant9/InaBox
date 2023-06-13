@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <style>
+     .carousel-item {
+      background-color: #F8E1A4; /* Sample background color */
+    }
+    nav{
+      background-color: #F2EBD1;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="font-size: 25px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">In a Box</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Packages.html">Packages</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Services & Products</a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="RecipeGuide.html">Recipe Guides</a></li>
+                <li><a class="dropdown-item" href="bathomeset.html">Bake at Home Set</a></li>
+                <li><a class="dropdown-item" href="Ingredients.html">Ingredients</a></li>
+                <li><a class="dropdown-item" href="otheritem.html">Other items</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="LoginForm.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SignupForm.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Welcome to In a Box Food Delivery Company</h1>
+            <p>In a Box is a rapidly growing food box delivery company that is experiencing increased demand for its services and products.
+               To meet this demand, the company has decided to develop a company website. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquam eveniet sit at ea in vero. 
+               Nulla itaque fugiat quibusdam quas repellendus maxime quasi aut harum debitis amet, facilis voluptatum.</p>
+            <button type="button" class="btn btn-primary"><a href="SignupForm.html" style="text-decoration: none;color: white;"><b>Get Started</b></a></button>
+          </div>
+          <div class="col-md-6">
+            <img src="food2.jpg" alt="Hero Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-3" style="background-color: #f2a9a9;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+              <div class="card-body">
+                <h5 class="card-title">Convenient Food Box Delivery</h5>
+                <p class="card-text"> In a Box specializes in delivering food boxes directly to customers' homes. This convenient service saves customers 
+                  time and effort by providing them
+                  with a curated selection of fresh and high-quality ingredients delivered right to their doorstep.</p>
+              
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3" style="background-color: #eaea8a;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+              <div class="card-body">
+                <h5 class="card-title">Increased Demand</h5>
+                <p class="card-text">The company has recently witnessed a surge in demand for its services and products. This indicates the growing popularity 
+                  and trust customers have in In a Box, making it a reliable and sought-after choice for food box deliveries.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3" style="background-color: #d891d0;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+              <div class="card-body">
+                <h5 class="card-title">Focus on Information Technology</h5>
+                <p class="card-text">In response to the increased demand, InaBox aims to leverage Information Technology to enhance its operations. By developing a company website, they seek to improve customer experience, streamline processes,
+                   and provide a online platform for users.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2>Testimonial 1</h2>
+                  <p>အရမ်းကောင်းပါတယ်သူငယ်ချင်းလေးရေ</p>
+                  <i class="fas fa-rocket"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2>Testimonial 2</h2>
+                  <p>အိုးခိုင်မော့ Very Good!</p>
+                  <i class="fas fa-globe"></i>
+                  <i class="fas fa-cogs"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2>Testimonial 3</h2>
+                  <p>ရှယ်ပဲ</p>
+                  <i class="fas fa-users"></i>
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+         
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4><a href="about.html" style="text-decoration: none;color: white;">About Us</a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel convallis eros.</p>
+            <ul class="list-unstyled">
+              <li><a href="#" style="text-decoration: none;color: white;">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Contact Us</h4>
+            <p>
+              <i class="fas fa-envelope"></i> Email: info@example.com<br>
+              <i class="fas fa-phone"></i> Phone: 123-456-7890
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">&copy; 2023 Your Company. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </footer>
+  
+  
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var myCarousel = document.querySelector('#carouselExampleIndicators');
+    var carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 5000, // Adjust the slide interval as needed (in milliseconds)
+      pause: 'hover'
+    });
+  </script>
+</body>
+
+</html>

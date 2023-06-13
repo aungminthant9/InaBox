@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Page</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <style>
+    .recipe-card {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .recipe-card .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .recipe-card .card-title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .recipe-card .card-text {
+      margin-bottom: 10px;
+    }
+
+    .recipe-card .btn {
+      width: 100%;
+    }
+    nav{
+      background-color: #F2EBD1;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="font-size: 25px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">In a Box</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Packages.html">Packages</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Services & Products</a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="RecipeGuide.html">Recipe Guides</a></li>
+                <li><a class="dropdown-item" href="bathomeset.html">Bake at Home Set</a></li>
+                <li><a class="dropdown-item" href="Ingredients.html">Ingredients</a></li>
+                <li><a class="dropdown-item" href="otheritem.html">Other items</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="LoginForm.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SignupForm.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+
+
+  <main>
+    <section class="recipes-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Recipe Guides</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card recipe-card">
+              <img src="meatballs.jpg" class="card-img-top" alt="Recipe 1">
+              <div class="card-body">
+                <h5 class="card-title">Meatballs</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper tortor.</p>
+                <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#recipeModal1">View Details</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Modal for Recipe 1 -->
+          <div class="modal fade" id="recipeModal1" tabindex="-1" aria-labelledby="recipeModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="recipeModal1Label">Meatballs Recipe</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p><b>Ingredients:</b><br>
+
+                    1 pound (450 grams) ground beef (preferably lean)<br>
+                    1/2 cup breadcrumbs<br>
+                    1/4 cup milk<br>
+                    1/4 cup grated Parmesan cheese<br>
+                    1/4 cup finely chopped onion<br>
+                    1 large egg<br>
+                    2 cloves garlic, minced<br>
+                    1 tablespoon fresh parsley, chopped<br>
+                    1/2 teaspoon salt<br>
+                    1/4 teaspoon black pepper<br>
+                    1/4 teaspoon dried oregano<br>
+                    1/4 teaspoon dried basil<br>
+                    1/4 teaspoon dried thyme<br>
+                    <b>Instructions:</b><br>
+                    
+                    In a large mixing bowl, combine the breadcrumbs and milk. Let them soak for a few minutes until the breadcrumbs have absorbed the milk.<br>
+                    Add the ground beef, grated Parmesan cheese, chopped onion, minced garlic, egg, parsley, salt, black pepper, dried oregano, dried basil, and dried thyme to the bowl.<br>
+                    Using clean hands or a fork, mix all the ingredients until well combined.<br>
+                    Shape the mixture into small meatballs, about 1-2 inches in diameter.<br>
+                    Heat a skillet or frying pan over medium heat and add a little oil.<br>
+                    Cook the meatballs in batches, turning them occasionally, until browned and cooked through. This usually takes about 10-12 minutes.<br>
+                    Once cooked, remove the meatballs from the pan and place them on a plate lined with paper towels to absorb any excess oil.<br>
+
+                    <b>Nutrition Facts (approximate values per serving, assuming 4 servings):</b><br>
+                    Calories: 300<br>
+                    Total Fat: 18g<br>
+                    Saturated Fat: 7g<br>
+                    Cholesterol: 105mg<br>
+                    Sodium: 600mg<br>
+                    Carbohydrates: 9g<br>
+                    Fiber: 1g<br>
+                    Sugars: 2g<br>
+                    Protein: 24g<br>
+                    Please note that the nutrition facts provided are estimates and can vary depending on the specific ingredients and portion sizes used.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card recipe-card">
+              <img src="pasta.jpg" class="card-img-top" alt="Recipe 1">
+              <div class="card-body">
+                <h5 class="card-title">Pasta</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper tortor.</p>
+                <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#recipeModal2">View Details</a>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="modal fade" id="recipeModal2" tabindex="-1" aria-labelledby="recipeModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="recipeModal2Label">Pasta Recipe</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    <b>Ingredients</b><br>
+                    
+                    8 ounces (227 grams) of pasta (such as spaghetti, penne, or fettuccine)<br>
+                    Water for boiling<br>
+                    Salt (to season the pasta water)<br>
+                    Sauce of your choice (such as marinara, Alfredo, or pesto)<br>
+                    Optional toppings (such as grated cheese, fresh herbs, or crushed red pepper flakes)<br>
+                    <b>Instructions:</b><br>
+                    
+                    Bring a large pot of water to a rolling boil.<br>
+                    Add salt to the boiling water. As a general rule, use about 1 tablespoon of salt for every 4 quarts (3.8 liters) of water.<br>
+                    Add the pasta to the boiling water and cook according to the package instructions until it reaches your desired level of tenderness. Stir occasionally to prevent sticking.<br>
+                    Once cooked, drain the pasta in a colander, but reserve a small amount of the cooking water if needed for the sauce.<br>
+                    Return the pasta to the pot or transfer it to a serving dish.<br>
+                    Add your desired sauce to the pasta and toss to evenly coat.<br>
+                    Serve the pasta hot, and optionally garnish with toppings of your choice.<br>
+                    Note: Cooking times may vary depending on the type and brand of pasta, so it's always a good idea to refer to the package instructions for specific guidelines.<br>
+                    
+                    <b>Nutrition Facts:</b><br>
+                    The nutritional content of pasta can vary depending on the type of pasta used and the specific ingredients in the sauce. However, here are some general nutrition facts for 2 ounces (56 grams) of cooked pasta (without sauce or toppings):<br>
+                    
+                    Calories: Approximately 200-220 calories<br>
+                    Carbohydrates: Around 40-45 grams<br>
+                    Protein: Roughly 7-8 grams<br>
+                    Fat: Minimal, usually less than 1 gram<br>
+                    Fiber: Typically 2-3 grams<br>
+                    Other nutrients: Pasta is a good source of energy-providing complex carbohydrates and contains small amounts of various vitamins and minerals.<br>
+                    Keep in mind that the addition of sauce, cheese, or other toppings will contribute additional calories, fats, and nutrients to the overall dish.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card recipe-card">
+              <img src="steak.png" class="card-img-top" alt="Recipe 1">
+              <div class="card-body">
+                <h5 class="card-title">Steak</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper tortor.</p>
+                <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#recipeModal3">View Details</a>
+              </div>
+            </div>
+          </div>
+         
+          <div class="modal fade" id="recipeModal3" tabindex="-1" aria-labelledby="recipeModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="recipeModal3Label">Steak Recipe</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p><b>Ingredients:</b><br>
+
+                    1 to 2 steaks (such as ribeye, sirloin, or filet mignon)<br>
+                    Salt and pepper (to taste)<br>
+                    Olive oil or vegetable oil (for cooking)<br>
+                    Optional: Herbs and spices (such as garlic powder, paprika, or rosemary)<br>
+                    <b>Instructions:</b><br>
+                    
+                    Remove the steak from the refrigerator and let it come to room temperature for about 30 minutes. This ensures even cooking.<br>
+                    Pat the steak dry with paper towels and season both sides generously with salt and pepper (and any additional herbs or spices, if desired).<br>
+                    Heat a skillet or frying pan over high heat. Add enough oil to coat the bottom of the pan.<br>
+                    Carefully place the steak in the hot pan and let it sear undisturbed for 2 to 3 minutes, or until a golden-brown crust forms.<br>
+                    Flip the steak and sear the other side for an additional 2 to 3 minutes.<br>
+                    Reduce the heat to medium and continue cooking the steak to your desired level of doneness. Here are some general guidelines:<br>
+                    Medium-Rare: Cook for an additional 3 to 4 minutes per side (internal temperature of 135-140°F or 57-60°C).<br>
+                    Medium: Cook for an additional 4 to 5 minutes per side (internal temperature of 145-155°F or 63-68°C).<br>
+                    Well-Done: Cook for an additional 5 to 6 minutes per side (internal temperature of 160°F or 71°C and above).<br>
+                    Note: Cooking times may vary depending on the thickness of the steak and personal preference.<br>
+                    Once the steak is cooked to your liking, remove it from the pan and let it rest for a few minutes before slicing. This allows the juices to redistribute and results in a more tender steak.<br>
+                    Slice the steak against the grain and serve it hot.<br>
+                    <b>Nutrition Facts</b> (approximate values per 3-ounce/85g serving of cooked beef steak):<br>
+                    
+                    Calories: 250-300<br>
+                    Protein: 25-30 grams<br>
+                    Fat: 15-25 grams (varies based on cut and cooking method)<br>
+                    Carbohydrates: 0 grams<br>
+                    Cholesterol: 75-90 milligrams<br>
+                    Iron: 2-3 milligrams<br>
+                    Sodium: 50-75 milligrams<br>
+                    Potassium: 350-400 milligrams<br>
+                    Please note that these nutrition facts are estimates and can vary based on the specific cut of steak and any additional ingredients or marinades used in the recipe.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card recipe-card">
+              <img src="cheese.jpg" class="card-img-top" alt="Recipe 2">
+              <div class="card-body">
+                <h5 class="card-title">Recipe 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper
+                  tortor.</p>
+                <a href="#" class="btn btn-dark">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card recipe-card">
+              <img src="wafer.jpeg" class="card-img-top" alt="Recipe 2">
+              <div class="card-body">
+                <h5 class="card-title">Recipe 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper
+                  tortor.</p>
+                <a href="#" class="btn btn-dark">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card recipe-card">
+              <img src="shrimp.jpg" class="card-img-top" alt="Recipe 2">
+              <div class="card-body">
+                <h5 class="card-title">Recipe 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper
+                  tortor.</p>
+                <a href="#" class="btn btn-dark">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card recipe-card">
+              <img src="foodSignup.jpg" class="card-img-top" alt="Recipe 2">
+              <div class="card-body">
+                <h5 class="card-title">Recipe 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper
+                  tortor.</p>
+                <a href="#" class="btn btn-dark">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card recipe-card">
+              <img src="foodSignup.jpg" class="card-img-top" alt="Recipe 2">
+              <div class="card-body">
+                <h5 class="card-title">Recipe 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper
+                  tortor.</p>
+                <a href="#" class="btn btn-dark">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card recipe-card">
+              <img src="foodSignup.jpg" class="card-img-top" alt="Recipe 2">
+              <div class="card-body">
+                <h5 class="card-title">Recipe 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper
+                  tortor.</p>
+                <a href="#" class="btn btn-dark">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card recipe-card">
+              <img src="foodSignup.jpg" class="card-img-top" alt="Recipe 2">
+              <div class="card-body">
+                <h5 class="card-title">Recipe 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper
+                  tortor.</p>
+                <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div> 
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card recipe-card">
+              <img src="foodSignup.jpg" class="card-img-top" alt="Recipe 2">
+              <div class="card-body">
+                <h5 class="card-title">Recipe 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper
+                  tortor.</p>
+                <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card recipe-card">
+              <img src="foodSignup.jpg" class="card-img-top" alt="Recipe 2">
+              <div class="card-body">
+                <h5 class="card-title">Recipe 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper
+                  tortor.</p>
+                <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4><a href="about.html" style="text-decoration: none;color: white;">About Us</a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel convallis eros.</p>
+            <ul class="list-unstyled">
+              <li><a href="#" style="text-decoration: none;color: white;">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Contact Us</h4>
+            <p>
+              <i class="fas fa-envelope"></i> Email: info@example.com<br>
+              <i class="fas fa-phone"></i> Phone: 123-456-7890
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">&copy; 2023 Your Company. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

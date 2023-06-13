@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Bake-at-Home Set Page</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <style>
+    .set-card {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .set-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .set-card .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .set-card .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .set-card .card-title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .set-card .card-text {
+      margin-bottom: 10px;
+    }
+
+    .set-card .btn {
+      width: 100%;
+    }
+    nav{
+      background-color: #F2EBD1;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="font-size: 25px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">In a Box</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Packages.html">Packages</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Services & Products</a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="RecipeGuide.html">Recipe Guides</a></li>
+                <li><a class="dropdown-item" href="bathomeset.html">Bake at Home Set</a></li>
+                <li><a class="dropdown-item" href="Ingredients.html">Ingredients</a></li>
+                <li><a class="dropdown-item" href="otheritem.html">Other items</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="LoginForm.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SignupForm.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+
+
+  <main>
+    <section class="sets-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">In a Box</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card set-card">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="bake.jpg" class="card-img-top" alt="Set 1">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Set 1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper tortor.</p>
+                    <a href="LoginForm.html" class="btn btn-dark">Buy Set</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card set-card">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="bake.jpg" class="card-img-top" alt="Set 2">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Set 2</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper tortor.</p>
+                    <a href="LoginForm.html" class="btn btn-dark">Buy Set</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card set-card">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="bake.jpg" class="card-img-top" alt="Set 3">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Set 3</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper tortor.</p>
+                    <a href="LoginForm.html" class="btn btn-dark">Buy Set</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mx-auto"> <!-- Added classes: mb-4 mx-auto -->
+            <div class="card set-card">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="bake.jpg" class="card-img-top" alt="Set 4">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Set 4</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in semper tortor.</p>
+                    <a href="LoginForm.html" class="btn btn-dark">Buy Set</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4><a href="about.html" style="text-decoration: none;color: white;">About Us</a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel convallis eros.</p>
+            <ul class="list-unstyled">
+              <li><a href="#" style="text-decoration: none;color: white;">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Contact Us</h4>
+            <p>
+              <i class="fas fa-envelope"></i> Email: info@example.com<br>
+              <i class="fas fa-phone"></i> Phone: 123-456-7890
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">&copy; 2023 Your Company. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
